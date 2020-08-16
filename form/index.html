@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <form action="#">
+          <fieldset>
+            <legend>Оформить заказ</legend>
+            <div class="row-form">
+              <label for="name">Имя</label>
+              <div class="form-holder">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="name"
+                />
+                <span></span>
+              </div>
+            </div>
+            <div class="row-form">
+                <label for="name"></label>
+                <div class="form-holder-2">
+                    <input type="text" id="name" name="name" required placeholder="surname" />
+                    <span></span>
+                </div>
+            </div>
+            <div>
+                <div class="form-holder-3">
+            <label for="address">Адрес доставки</label>
+            <textarea id="address" name="address" rows="2" required placeholder="address"> </textarea>
+            </div>
+            </div>
+            <label for="date">Дата доствки</label>
+            <input type="date" name="date" />
+            <label for="time">Время доставки</label>
+            <input type="time" name="time" />
+            <input type="submit" value="Заказать" />
+            <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            </div>
+            <div class="form-holder-4">
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <span></span>
+            </div>
+              </fieldset>
+        </form>
+        
+      </div>
+    </div>
+  </body>
+</html>
