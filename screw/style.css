@@ -1,0 +1,332 @@
+.wrapper {
+  width: 1200px;
+  min-height: 1200px;
+  margin: 0 auto;
+}
+.wrench {
+  position: relative;
+  margin: 150px;
+  width: 200px;
+  transform: rotate(-40deg);
+}
+.part1 {
+  width: 200px;
+  height: 200px;
+  background: #333;
+  border-radius: 120px 120px 85px 85px;
+}
+.part2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50px 50px 50px 50px;
+  background: #fff;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.part3 {
+  width: 60px;
+  height: 250px;
+  background: #333;
+  position: absolute;
+  top: 187px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+}
+.part4 {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: -222px;
+  margin: auto;
+  right: 0;
+}
+.nut {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+.detail1 {
+  width: 0;
+  border-bottom: 30px solid grey;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  margin: 0 auto;
+}
+.detail2 {
+  width: 104px;
+  height: 60px;
+  background-color: grey;
+  margin: 0 auto;
+}
+.detail3 {
+  width: 0;
+  border-top: 30px solid grey;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  margin: 0 auto;
+}
+.detail4 {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.bolt {
+  width: 600px;
+
+  position: relative;
+}
+.element {
+  width: 100px;
+  height: 40px;
+  background: #333;
+  margin: auto;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  font-size: 0;
+  text-align: right;
+}
+.element1 {
+  height: 55px;
+  width: 6px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  margin: -8px 0px 0px 8px;
+  transform: rotate(33deg);
+}
+.element2 {
+  width: 55px;
+  height: 100px;
+  background-color: #333;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -156px;
+  right: 0;
+  margin: auto;
+}
+.element3 {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -156px;
+  right: 44px;
+  margin: auto;
+}
+
+.ship {
+  position: relative;
+}
+.level9 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  border-radius: 50%;
+  left: 440px;
+  bottom: 9px;
+}
+.level9::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  top: 0;
+  left: 175%;
+  background: gray;
+  transform: rotate(-45deg);
+  border-radius: 50% 50% 0 0;
+}
+.level9::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  top: 50px;
+  left: 50px;
+  background: gray;
+  border-radius: 50% 50% 0 0;
+}
+.level10 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  border-radius: 50%;
+  left: 495px;
+  bottom: 9px;
+}
+.level10::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  top: 0;
+  left: 175%;
+  background: gray;
+  transform: rotate(-45deg);
+  border-radius: 50% 50% 0 0;
+}
+.level10::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  top: 50px;
+  left: 50px;
+  background: gray;
+  border-radius: 50% 50% 0 0;
+}
+.level11 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  border-radius: 50%;
+  left: 550px;
+  bottom: 9px;
+  margin-left: 5px;
+}
+.level11::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  top: 0;
+  left: 175%;
+  background: gray;
+  transform: rotate(-45deg);
+  border-radius: 50% 50% 0 0;
+}
+.level11::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  top: 50px;
+  left: 50px;
+  background: gray;
+  border-radius: 50% 50% 0 0;
+}
+.level12 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: bisque;
+  border-radius: 50%;
+  left: 600px;
+  bottom: 9px;
+  margin-left: 5px;
+}
+.level12::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  top: 0;
+  left: 175%;
+  background: gray;
+  transform: rotate(-45deg);
+  border-radius: 50% 50% 0 0;
+}
+.level12::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  top: 50px;
+  left: 50px;
+  background: gray;
+  border-radius: 50% 50% 0 0;
+}
+.level15 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid grey;
+  border-bottom: 50px solid transparent;
+  bottom: 150px;
+  right: 568px;
+}
+.level16 {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  transform: rotate(-130deg);
+  background-color: #333;
+  top: -25px;
+  left: 641px;
+}
+.level17 {
+  position: absolute;
+  width: 0;
+  border-bottom: 30px solid #333;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(-90deg);
+  left: 355px;
+  top: -4px;
+}
+
+.level18 {
+  width: 248px;
+  height: 275px;
+  background: transparent;
+  border-left: 100px solid grey;
+  border-radius: 50%;
+  position: absolute;
+  left: 347px;
+  bottom: 60px;
+}
+.level19 {
+  width: 15px;
+  height: 300px;
+  background-color: #333;
+  position: absolute;
+  left: 43%;
+  bottom: 39px;
+}
+.level19::before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border-top: 20px solid #800000;
+  border-right: 30px solid transparent;
+  border-bottom: 20px solid #800000;
+  border-left: 50px solid #800000;
+}
+.level6 {
+  width: 250px;
+  height: 40px;
+  background-color: #333;
+  margin-top: 400px;
+  margin-left: 400px;
+}
