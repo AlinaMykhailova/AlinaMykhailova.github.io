@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@font-face {
+  font-family: "sfns_displaythin";
+  src: url("./fonts/sfns/sfns_display_thin-webfont.woff2") format("woff2"),
+    url("./fonts/sfns/sfns_display_thin-webfont.woff") format("woff"),
+    url("./fonts/sfns/sfns_display_thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_sunday";
+  src: url("./fonts/sunday/sunday.ttf");
+  src: local("☺"), url("./fonts/sunday/sunday.woff") format("woff"),
+    url("fonts/sunday.ttf") format("truetype"),
+    url("fonts/sunday.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body,
 div,
@@ -171,19 +190,30 @@ body {
   padding: 10px 10px;
   min-width: 120px;
   text-align: center;
+  font-family: "Pacifico", cursive;
 }
 li:hover {
   background: red;
 }
 li:hover > ul {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  /* top: 100%; */
 }
 ul ul {
   position: absolute;
   top: 100%;
   left: 0;
   padding: 10px 0 0 0;
-  display: none;
+  opacity: 0.1;
+  visibility: hidden;
+  transition: opacity 0.8s;
+  /* 
+  transition-property: opacity;
+  transition-delay: 0.5s; */
+
+  /* top: -1000%; 
+   transition: top 5.8s; */
 }
 .third {
   position: absolute;
@@ -245,7 +275,12 @@ ul ul {
 .main-menu-li-3:hover .guardians:after {
   background-position: -60px -30px;
 }
-
+.main-menu-li-3 a {
+  font-family: "sfns_displaythin";
+}
+.third a {
+  font-family: "Conv_sunday";
+}
 .about-marvel {
   height: 60px;
   margin: 0 20px;
@@ -413,4 +448,101 @@ a {
   position: absolute;
   left: 0;
   top: 0;
+}
+.main-content {
+  min-height: 600px;
+  position: relative;
+}
+.transform {
+  transform: translateX(100%);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transition: transform 0.5s;
+}
+.transform:hover {
+  transform: translateX(0);
+}
+.transform h4 {
+  width: 100px;
+  background: #333;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+.links {
+  background: #fff;
+  height: 134px;
+}
+
+.link-ul {
+  margin-left: 25px;
+  width: 160px;
+  padding: 0;
+  list-style: none;
+  z-index: 5;
+  position: relative;
+  transform: rotate(-45deg);
+}
+.link-li {
+  display: inline-block;
+  background: antiquewhite;
+  position: relative;
+  /* transform: rotate(45deg); */
+}
+
+.link-li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+  transform: rotate(45deg);
+  float: left;
+  width: 31px;
+  margin: 0;
+}
+.link-li .link-a-1::after {
+  content: "";
+  background: url(./images/sprite.jpg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 3px;
+  background-position: 0 -60px;
+}
+.link-li .link-a-2::after {
+  content: "";
+  background: url(./images/sprite.jpg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 3px;
+  background-position: 0 -30px;
+}
+.link-li .link-a-3::after {
+  content: "";
+  background: url(./images/sprite.jpg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 3px;
+  background-position: -30px -30px;
+}
+.link-li .link-a-4::after {
+  content: "";
+  background: url(./images/sprite.jpg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 3px;
+  background-position: -60px 0;
 }
